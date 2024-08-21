@@ -5,10 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        .Login-container {
+            border: 2px dashed;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        
+        h1 {
+            color: blue;
+            font-size: 30px;
+        }
+        
+        .address-bar {
+            background-color: rgba(130, 130, 184, 0.275);
+            display: flex;
+            /* padding: 20px; */
+            font-size: 20px;
+            /* justify-content: flex-end; */
+        }
+        
+        .address-bar>div {
+            background-color: dodgerblue;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            font-size: larger;
+            font-weight: bold;
+            /* flex: 1 2; */
+        }
+        
+        .circle {
+            width: 55px;
+            height: 35px;
+            background-color: dodgerblue;
+            font-size: larger;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="address-bar">
+        <span class="circle">
+            <i class="fa-regular fa-circle"></i>
 
+        </span>
+        <div class="contact">
+            contact
+        </div>
+        <div class="SignUp">
+            SignUp
+        </div>
+    </div>
+    <div class="Login-container">
+        <h1>Login to Vercel</h1>
+    </div>
 </body>
 
 </html>
