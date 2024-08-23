@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <style>
+        body {
+            margin: 0;
+        }
+        
         .Login-container {
             border: 2px dashed;
             text-align: center;
@@ -24,19 +28,17 @@
         .address-bar {
             background-color: rgba(130, 130, 184, 0.275);
             display: flex;
-            /* padding: 20px; */
+            padding: 20px;
             font-size: 20px;
-            /* justify-content: flex-end; */
+            align-items: center;
         }
         
         .address-bar>div {
             background-color: dodgerblue;
             text-align: center;
-            margin: 10px;
-            padding: 10px;
+            margin-left: 20px;
             font-size: larger;
             font-weight: bold;
-            /* flex: 1 2; */
         }
         
         .circle {
@@ -44,6 +46,24 @@
             height: 35px;
             background-color: dodgerblue;
             font-size: larger;
+            margin-right: auto;
+        }
+        
+        #contact-p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 3px;
+        }
+        
+        .SignUp {
+            padding: 5px;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .SignUp:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -55,14 +75,15 @@
 
         </span>
         <div class="contact">
-            contact
+
+            <p id="contact-p">contact</p>
         </div>
         <div class="SignUp">
             SignUp
         </div>
     </div>
     <div class="Login-container">
-        <h1>Login to Vercel</h1>
+        <h1>Login</h1>
     </div>
 </body>
 
